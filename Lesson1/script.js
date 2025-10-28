@@ -1,3 +1,4 @@
+
 // 1.
 // დაწერე ფუნქცია, რომელიც მიიღებს a და b პარამეტრებს და დააბრუნებს ტექსტს “ტოლია”
 // თუ a უდრის b-ს, ხოლო წინააღმდეგ შემთხვევაში, დააბრუნებს “არ არის ტოლი” გაითვალისწინე,
@@ -7,7 +8,7 @@ function compareNumber(a,b) {
     if (a === b) {
         return `a: ${a} is equal b: ${b}`
     } else if (a !== b) {
-        return `a: ${a} is not equal b: ${b}`
+        return `a: ${a} is not equal b: ${b}, because types are not similar`
     } else {
         console.error(error.message);
     }
@@ -47,7 +48,6 @@ console.log(fahrenheit_to_celsius('32'));
 // operation ცვლადში განსაზღვრული ოპერაციით თუ a და b არ არიან რიცხვები, ან თუ
 // operation ცვლადში არის უცნობი, ოპერაცია დააბრუნე - false
 
-const operation = ["+", "-", "*", "/"];
 function calculate(a, b, operation) {
 
     if (typeof a !== "number" || typeof b !== "number") {
