@@ -39,6 +39,21 @@ console.log(upperCase(str));
 
 
 
+// ყოველი სიტყვის პირველ ასოს გადაწერს დიდ რეგისტრში და დააბრუნებს ახალ წინადადებას:
+
+const upperCaseFirst = (str) => {
+    const words = str.split(' ');
+    const capitalizedWords = words.map(
+        word => word.charAt(0).toUpperCase() + word.slice(1)
+    );
+
+    return capitalizedWords.join(' ');
+}
+
+console.log(upperCaseFirst(str));
+
+
+
 // 3.
 // დაწერე ფუნქცია, რომელიც პარამეტრად მიიღებს მომხმარებლების მასივს და დააბრუნებს დალაგებულ მასივს
 // მომხმარებლების ასაკის ზრდადობის მიხედვით მაგალითად, ჩავთვალოთ, რომ გვაქვს
