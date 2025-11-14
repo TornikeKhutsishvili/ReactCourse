@@ -1,0 +1,49 @@
+/* general */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Task 1 - Modal */
+
+.main-modal {
+    width: 100%;
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my_button {
+    color: #ffffff;
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    padding: 4px 8px;
+}
+
+.modal {
+    width: 400px;
+    height: auto;
+
+    display: none;
+    background-color: #ffffff;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+}
+
+.modal-footer {
+    margin-top: 15px;
+}
+
+.modal-footer button {
+    padding: 4px 8px;
+    border-radius: 8px;
+}
