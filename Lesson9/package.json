@@ -1,0 +1,14 @@
+{
+  "name": "lesson9",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tornike",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "validator": "^13.15.23"
+  }
+}
