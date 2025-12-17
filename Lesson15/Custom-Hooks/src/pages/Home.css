@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   margin: 0;
   padding: 0;
@@ -25,4 +26,24 @@ body {
   background-color: black;
 }
 
-/*  */
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.light-theme button {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.dark-theme button {
+  background-color: #333;
+  color: white;
+}
