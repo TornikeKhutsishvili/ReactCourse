@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About"
+  },
+
+  "language": {
+    "EN": "EN",
+    "GE": "GE"
+  },
+
+  "header": {
+    "title": "Todo Website"
+  },
+
+  "about": {
+    "title": "About Us",
+    "description": "This is a sample todo app built with React."
+  },
+
+  "todo": {
+    "Backlog": "Backlog",
+    "done": "done",
+    "delete": "delete"
+  },
+
+  "todoDone": {
+    "Done": "Done",
+    "BackToTodo": "Back To Todo",
+    "Delete": "Delete",
+    "NoCompletedTasks": " No completed tasks"
+  },
+
+  "todoList": {
+    "MyToDoList": "My To-Do List"
+  },
+
+  "todoProgress": {
+    "InProgress": "In Progress",
+    "BackToTodo": "Back To Todo",
+    "Delete": "Delete",
+    "Noprogresstasks": "No progress tasks"
+  },
+
+  "footer": {
+    "app": "Todo App.",
+    "reserved": "All rights reserved."
+  },
+
+  "errorPage": {
+    "notFound": "Page not found",
+    "description": "Sorry, we couldn’t find the page you’re looking for.",
+    "goBackHome": "Go back home",
+    "ContactSupport": "Contact support"
+  }
+}
