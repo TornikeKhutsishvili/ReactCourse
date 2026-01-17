@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "მთავარი",
+    "about": "შესახებ"
+  },
+
+  "language": {
+    "EN": "ინგლ",
+    "GE": "ქართ"
+  },
+
+  "header": {
+    "title": "Todo ვებსაიტი"
+  },
+
+  "about": {
+    "title": "ჩვენ შესახებ",
+    "description": "ეს არის ნიმუშის Todo აპი, შექმნილი React-ით."
+  },
+
+  "todo": {
+    "Backlog": "ბექლოგი",
+    "done": "შესრულებული",
+    "delete": "წაშლა"
+  },
+
+  "todoDone": {
+    "Done": "შესრულებული",
+    "BackToTodo": "უკან დაბრუნება",
+    "Delete": "წაშლა",
+    "NoCompletedTasks": "შესრულებული ამოცანები არ არის"
+  },
+
+  "todoList": {
+    "MyToDoList": "ჩემი To-Do სია"
+  },
+
+  "todoProgress": {
+    "InProgress": "მიმდინარეობს",
+    "BackToTodo": "უკან დაბრუნება",
+    "Delete": "წაშლა",
+    "Noprogresstasks": "არ არის ამოცანები"
+  },
+
+  "footer": {
+    "app": "Todo აპი.",
+    "reserved": "ყველა უფლება დაცულია."
+  },
+
+  "errorPage": {
+    "notFound": "გვერდი ვერ მოიძებნა",
+    "description": "უკაცრავად, ჩვენ ვერ მოიძებნეთ გვერდი, რომლის მოძებნას თქვენ უკანასკნელი.",
+    "goBackHome": "დაბრუნდით მთავარ გვერდზე",
+    "ContactSupport": "დაუკავშირდით მხარდაჭერას"
+  }
+}
