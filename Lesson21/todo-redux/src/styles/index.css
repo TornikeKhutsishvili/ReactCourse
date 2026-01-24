@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.done-todo-page-wrapper,
+.todolist-page-wrapper,
+.create-page-wrapper {
+  height: 85vh;
+  min-height: 85vh;
+}
