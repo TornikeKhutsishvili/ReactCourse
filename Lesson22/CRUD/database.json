@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstname": "Tornike",
+      "lastname": "Khutsishvili",
+      "email": "toko@gmail.com"
+    },
+    {
+      "id": "3",
+      "firstname": "Mariam",
+      "lastname": "Mariamidze",
+      "email": "mariam@gmail.com"
+    },
+    {
+      "id": "2",
+      "firstname": "Giorgi",
+      "lastname": "Giorgadze",
+      "email": "giorgi@gmail.com"
+    }
+  ]
+}
