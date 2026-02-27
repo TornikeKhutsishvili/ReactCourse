@@ -1,0 +1,21 @@
+.nvabar {
+  display: flex;
+  background-color: rgb(233, 227, 227);
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  margin-right: 20px;
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+.horizontal {
+  flex-direction: row;
+}
+
+.active {
+  color: red;
+}
