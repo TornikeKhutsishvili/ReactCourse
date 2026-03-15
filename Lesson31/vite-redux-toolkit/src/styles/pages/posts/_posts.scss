@@ -1,0 +1,8 @@
+@use "../../variables" as vars;
+@use "../../mixins" as mix;
+@use "../../breakpoints" as breaks;
+
+.posts {
+    padding: 40px;
+    @include mix.flex($justify: center, $align: center, $wrap: wrap, $gap: 20px);
+}

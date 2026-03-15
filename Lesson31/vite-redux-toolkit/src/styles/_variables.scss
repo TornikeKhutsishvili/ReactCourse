@@ -1,0 +1,44 @@
+/* Colors */
+$primary: #8b4513;
+$secondary: #d2b48c;
+$accent: #cd853f;
+
+$bg-light: #fdf5e6;
+$white: #ffffff;
+
+$text-dark: #2f1b0a;
+$bg-dark: #130b04;
+$text-light: #6d4c41;
+
+$border-color: rgba(139, 69, 19, 0.1);
+
+/* Effects */
+$glass: rgba(255, 255, 255, 0.7);
+$shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+$btn-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+
+/* Motion */
+$transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+/* Fonts */
+$font-primary: "Outfit", "Noto Sans Georgian", sans-serif;
+
+$base-font-size: 16px;
+$fontSize: 1px;
+
+/* Paddings and Margins */
+$padding: 1px;
+$margin: 1px;
+
+/* Size */
+$section-padding: 100px 0;
+$border-box: border-box;
+
+$container-max-width: 1200px;
+$height-vh-100: 100vh;
+$width-100: 100%;
+
+/* Breakpoints */
+$mobile: 768px;
+$tablet: 992px;
+$desktop: 1024px;

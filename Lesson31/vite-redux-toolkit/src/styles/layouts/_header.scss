@@ -1,0 +1,77 @@
+@use "../variables" as vars;
+@use "../mixins" as mix;
+@use "../breakpoints" as breaks;
+
+header {
+    @include mix.position($type: sticky, $top: 0, $left: 0, $z: 1000);
+    width: vars.$width-100;
+    background: vars.$glass;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid vars.$border-color;
+
+    .nav {
+        @include mix.flex($justify: space-around, $align: center);
+        height: 80px;
+
+        .logo {
+            @include mix.flex($align: center, $gap: 10px);
+            color: vars.$primary;
+
+            img {
+                height: 40px;
+            }
+        }
+
+        .nav-links {
+            @include mix.flex($gap: 30px);
+            @include breaks.mq(tablet) {
+                display: none;
+                @include mix.position($type: absolute, $top: 80px, $left: 0);
+
+                padding: 20px;
+                width: vars.$width-100;
+                background: vars.$white;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            a {
+                color: vars.$text-light;
+
+                &:hover {
+                    color: vars.$primary;
+                }
+            }
+
+            &.open {
+                @include breaks.mq(tablet) {
+                display: flex;
+                }
+            }
+
+            .active {
+                color: vars.$accent;
+            }
+        }
+
+        .fa-bars {
+            display: none;
+
+            @include breaks.mq(tablet) {
+                display: block;
+                cursor: pointer;
+            }
+        }
+
+        .nav-actions {
+            @include mix.flex($align: center, $gap: 20px);
+
+            span{
+                @include breaks.mq(mobile) {
+                    font-size: 0;
+                }
+            }
+        }
+    }
+}
