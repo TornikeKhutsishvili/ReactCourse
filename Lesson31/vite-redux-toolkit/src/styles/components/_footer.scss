@@ -1,0 +1,64 @@
+@use "../variables" as vars;
+@use "../mixins" as mix;
+@use "../breakpoints" as breaks;
+
+footer {
+    background: vars.$bg-light;
+
+    .footer-grid {
+        @include mix.grid($columns: 2fr 1fr 1fr 1.5fr, $gap: 40px);
+
+        h4 {
+            color: vars.$primary;
+        }
+
+        p {
+            color: vars.$text-light;
+        }
+
+        .social-links {
+            @include mix.flex($gap: 15px);
+
+            a {
+                @include mix.flex($justify: center, $align: center);
+                background: vars.$white;
+                color: vars.$primary;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+                &:hover {
+                    background: vars.$primary;
+                    color: vars.$white;
+                    transform: translateY(-3px);
+                }
+            }
+        }
+
+        .footer-links {
+            a {
+                color: vars.$text-light;
+
+                &:hover {
+                    color: vars.$primary;
+                    padding-left: 5px;
+                }
+            }
+        }
+
+        @include breaks.mq(tablet) {
+            @include mix.grid($columns: repeat(2, 1fr));
+        }
+
+        @include breaks.mq(mobile) {
+            @include mix.grid($columns: 1fr);
+        }
+    }
+
+    .footer-bottom {
+        color: vars.$text-light;
+        border-top: 1px solid vars.$border-color;
+        text-align: center;
+    }
+}

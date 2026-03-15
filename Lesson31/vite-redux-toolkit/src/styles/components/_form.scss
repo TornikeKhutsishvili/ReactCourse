@@ -1,0 +1,8 @@
+@use "../variables" as vars;
+@use "../mixins" as mix;
+@use "../breakpoints" as breaks;
+
+.form-group {
+    margin-top: 20px;
+    @include mix.flex($justify: center, $align: center, $direction: column, $wrap: wrap, $gap: 15px);
+}

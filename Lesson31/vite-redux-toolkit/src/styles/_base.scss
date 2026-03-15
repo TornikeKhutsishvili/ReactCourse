@@ -1,0 +1,38 @@
+@use "./variables" as vars;
+@use "./mixins" as mix;
+
+/* Font Face */
+@font-face {
+    font-family: "Outfit";
+    src: url("../assets/fonts/Outfit.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Noto-Sans-Georgian";
+    src: url("../assets/fonts/NotoSansGeorgian.woff2") format("woff2");
+}
+
+// General Styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: vars.$border-box;
+}
+
+body {
+    font-family: vars.$font-primary;
+    background-color: vars.$bg-light;
+    color: vars.$text-dark;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: vars.$transition;
+}
+
+ul {
+    list-style: none;
+}

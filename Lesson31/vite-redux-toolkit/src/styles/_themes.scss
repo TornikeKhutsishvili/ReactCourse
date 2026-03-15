@@ -1,0 +1,28 @@
+@use "variables" as vars;
+
+/* Light Theme */
+body.light {
+  color: vars.$primary;
+  background-color: vars.$bg-light;
+}
+
+/* Dark Theme */
+body.dark {
+  color: vars.$white;
+  background-color: vars.$bg-dark;
+
+  /* cards */
+  .card {
+    background-color: #2a1a10;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: vars.$shadow;
+
+    .card-title {
+      color: vars.$white;
+    }
+
+    .card-text {
+      color: vars.$accent;
+    }
+  }
+}

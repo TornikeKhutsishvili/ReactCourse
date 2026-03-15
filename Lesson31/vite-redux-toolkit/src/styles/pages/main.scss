@@ -1,0 +1,11 @@
+@use "./home" as home;
+@use "./about" as about;
+@use "./error" as error;
+
+// Users
+@use "./users/users" as users;
+@use "./users/user" as user;
+
+// Posts
+@use "./posts/posts" as posts;
+@use "./posts/post" as post;
