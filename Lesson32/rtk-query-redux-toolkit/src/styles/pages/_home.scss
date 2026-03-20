@@ -1,0 +1,7 @@
+@use "../variables" as vars;
+@use "../mixins" as mix;
+@use "../breakpoints" as breaks;
+
+.home-wrapper {
+    min-height: 85vh;
+}
