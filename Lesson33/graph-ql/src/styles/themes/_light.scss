@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as vars;
+
+/* Light Theme */
+body.light {
+    color: vars.$primary;
+    background-color: vars.$bg-light;
+}

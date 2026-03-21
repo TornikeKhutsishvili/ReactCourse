@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as vars;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: vars.$border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: vars.$transition;
+}
+
+ul {
+    list-style: none;
+}

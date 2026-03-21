@@ -1,0 +1,7 @@
+@use "./abstracts/main.scss" as abstract;
+@use "./base/main.scss" as base;
+@use "./vendors/main.scss" as vendor;
+@use "./themes/main.scss" as theme;
+@use "./components/main.scss" as comp;
+@use "./layouts/main.scss" as layout;
+@use "./pages/main.scss" as page;

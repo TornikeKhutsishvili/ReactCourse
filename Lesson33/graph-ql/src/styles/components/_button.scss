@@ -1,0 +1,38 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/breakpoints" as breaks;
+
+.btn {
+    @include mix.button-base;
+
+    @include breaks.mq(mobile) {
+        text-align: center;
+    }
+}
+
+.btn-group {
+    @include mix.flex($justify: space-between, $align: center);
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: vars.$primary;
+    color: vars.$white;
+    box-shadow: vars.$btn-shadow;
+
+    &:hover {
+        background-color: vars.$accent;
+        transform: translateY(-3px);
+    }
+}
+
+.btn-outline {
+    background: transparent;
+    border: 6px solid vars.$primary;
+    color: vars.$primary;
+
+    &:hover {
+        background-color: vars.$primary;
+        color: vars.$white;
+    }
+}
