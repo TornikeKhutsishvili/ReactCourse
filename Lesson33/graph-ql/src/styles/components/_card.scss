@@ -1,0 +1,42 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/breakpoints" as breaks;
+
+.card {
+    border: none;
+    border-radius: 12px;
+    background: vars.$white;
+    box-shadow: vars.$shadow;
+    transition: vars.$transition;
+    overflow: hidden;
+    border: 1px solid vars.$border-color;
+    min-height: 240px;
+    width: 380px;
+    padding: 40px;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-body {
+        padding: 20 * vars.$padding;
+
+        .card-title {
+            font-size: 20 * vars.$fontSize;
+            font-weight: 700;
+            color: vars.$text-dark;
+            margin-bottom: 12 * vars.$margin;
+            letter-spacing: 0.5px;
+            font-family: vars.$font-primary;
+        }
+
+        .card-text {
+            font-size: 14 * vars.$fontSize;
+            color: vars.$text-light;
+            margin-bottom: 6 * vars.$margin;
+            line-height: 1.5;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@use "../abstracts/mixins" as mix;
+
+.grid-wrapper {
+    @include mix.grid($justify-content: center, $align-content: center);
+    padding: 40px;
+
+    .grid {
+        @include mix.grid($columns: repeat(3, 1fr), $gap: 15px, $align-content: center, $justify-content: center);
+    }
+}
