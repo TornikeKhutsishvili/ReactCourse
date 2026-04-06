@@ -5,10 +5,10 @@ const MainLayout = lazy(() => import("../shared/layouts/MainLayout"));
 const ErrorPage = lazy(() => import("../features/pages/ErrorPage"));
 
 const Home = lazy(() => import("../features/pages/Home"));
+const TodosPage = lazy(() => import("../features/pages/todos/TodosPage"));
+const TodoPage = lazy(() => import("../features/pages/todos/TodoPage"));
 const UsersPage = lazy(() => import("../features/pages/users/UsersPage"));
 const UserPage = lazy(() => import("../features/pages/users/UserPage"));
-const ProductsPage = lazy(() => import("../features/pages/products/ProductsPage"));
-const ProductPage = lazy(() => import("../features/pages/products/ProductPage"));
 
 const AppRouter:React.FC = () => {
   return (
@@ -22,12 +22,14 @@ const AppRouter:React.FC = () => {
           <Route path=":id" element={<UserPage /> } />
         </Route>
 
-        {/* Products */}
-        <Route path='products'>
-          <Route index element={<ProductsPage /> } />
-          <Route path=":id" element={<ProductPage /> } />
+        {/* Todos */}
+        <Route path='todos'>
+          <Route index element={<TodosPage /> } />
+          <Route path=":id" element={<TodoPage /> } />
         </Route>
       </Route>
+
+      <Route path="*" element={<ErrorPage />} />
     </Routes>
   )
 }

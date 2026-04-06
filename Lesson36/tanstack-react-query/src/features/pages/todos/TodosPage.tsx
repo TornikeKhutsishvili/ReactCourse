@@ -1,10 +1,10 @@
 import React from 'react';
-import useFetchUsers from '../../../core/hooks/queries/users/useFetchUsers';
+import useFetchTodos from '../../../core/hooks/queries/todos/useFetchTodos';
 import ErrorPage from '../ErrorPage';
-import UserList from '../../../shared/components/users/UserList';
+import TodoList from '../../../shared/components/todos/TodoList';
 
-const UsersPage: React.FC = () => {
-  const { data: users, error, isLoading } = useFetchUsers();
+const TodosPage: React.FC = () => {
+  const { data: todos, error, isLoading } = useFetchTodos();
 
   if (error) return <ErrorPage />;
   if (isLoading)
@@ -15,8 +15,8 @@ const UsersPage: React.FC = () => {
     );
 
   return (
-    <UserList users={users} />
+    <TodoList todos={todos} />
   );
 };
 
-export default UsersPage;
+export default TodosPage;
