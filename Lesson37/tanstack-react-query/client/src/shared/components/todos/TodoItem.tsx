@@ -1,5 +1,6 @@
-import React from "react";
+import React, { type MouseEvent } from "react";
 import { useNavigate } from "react-router-dom";
+import useDeleteTodo from "../../../core/hooks/mutations/todo/useDeleteTodo";
 
 interface TodoItemProps {
   id: number,
@@ -9,7 +10,13 @@ interface TodoItemProps {
 }
 
 const TodoItem: React.FC<TodoItemProps> = ({ id, description, title, isCompleted }) => {
+  const { mutate } = useDeleteTodo()
   const navigate = useNavigate();
+
+  const handleDelete = (e: MouseEvent<HTMLButtonElement>, id: number) => {
+    e.stopPropagation();
+    mutate(id)
+  }
 
   return (
     <div key={id} onClick={() => navigate(`/todos/${id}`)}
@@ -40,6 +47,12 @@ const TodoItem: React.FC<TodoItemProps> = ({ id, description, title, isCompleted
         <p className={`text-xs mt-1 ${isCompleted ? "text-green-600" : "text-yellow-600"}`}>
           {isCompleted ? "Completed" : "Pending"}
         </p>
+
+        <button type="button" onClick={(e) => handleDelete(e, id)}
+          className="absolute p-3 text-red-700 top-2 right-2 border border-gray-300"
+        >
+          x
+        </button>
       </div>
     </div>
   );

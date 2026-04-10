@@ -1,11 +1,10 @@
 import { useMutation } from "@tanstack/react-query";
-import type { ITodo } from "../../../interfaces/todo.interface";
-import createTodo from "../../../api/todo/createTodo";
+import deleteTodo from "../../../api/todo/deleteTodo";
 import { client } from "../../../tanstack/client";
 
-const useCreateTodo = () => {
+const useDeleteTodo = () => {
   const result = useMutation({
-    mutationFn: (data: Partial<ITodo>) => createTodo(data),
+    mutationFn: (id: number) => deleteTodo(id),
     onError: (err) => console.log(err),
     onSuccess() {
         client.invalidateQueries({
@@ -14,7 +13,7 @@ const useCreateTodo = () => {
     },
   })
 
-  return result
+  return result;
 }
 
-export default useCreateTodo;
+export default useDeleteTodo;
