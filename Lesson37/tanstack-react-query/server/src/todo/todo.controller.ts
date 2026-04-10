@@ -1,14 +1,6 @@
+/* eslint-disable prettier/prettier */
 // Import necessary decorators and modules from Nest.js.
-import {
-  Controller,
-  Get,
-  Post,
-  Body,
-  Put,
-  Param,
-  Delete,
-} from '@nestjs/common';
-
+import { Controller, Get, Post, Body, Put, Param, Delete } from '@nestjs/common';
 import { TodoService } from './todo.service';
 
 @Controller('todos')

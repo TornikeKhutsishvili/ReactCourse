@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import useFetchTodos from '../../../core/hooks/queries/todos/useFetchTodos';
 import ErrorPage from '../ErrorPage';
 import TodoList from '../../../shared/components/todos/TodoList';
+import CreateTodo from '../../../shared/components/todos/CreateTodo';
 
 const TodosPage: React.FC = () => {
   const { data: todos, error, isLoading } = useFetchTodos();
@@ -15,7 +16,10 @@ const TodosPage: React.FC = () => {
     );
 
   return (
-    <TodoList todos={todos} />
+    <Fragment>
+      <TodoList todos={todos} />
+      <CreateTodo />
+    </Fragment>
   );
 };
 

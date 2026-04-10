@@ -12,8 +12,8 @@ const TodoList: React.FC<TodoListProps> = ({ todos }) => {
       <h1 className="text-3xl font-bold mb-6 text-gray-800">Todos</h1>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {todos?.map(({ id, completed, title }: ITodo) => (
-          <TodoItem key={id} id={id} completed={completed} title={title} />
+        {todos?.map(({ id, description, title, isCompleted }: ITodo) => (
+          <TodoItem key={id} id={id} isCompleted={isCompleted} description={description} title={title} />
         ))}
       </div>
     </div>

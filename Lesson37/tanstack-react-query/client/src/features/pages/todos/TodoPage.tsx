@@ -17,7 +17,13 @@ const TodoPage:React.FC = () => {
   if (!todo) return <p>No data</p>;
 
   return (
-    <TodoItem key={todo.id} id={todo.id} title={todo.title} completed={todo.completed} />
+    <TodoItem
+      key={todo.id}
+      id={todo.id}
+      title={todo.title}
+      description={todo.description}
+      isCompleted={todo.isCompleted}
+    />
   )
 }
 
