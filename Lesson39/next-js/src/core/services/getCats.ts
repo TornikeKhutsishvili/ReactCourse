@@ -4,6 +4,10 @@ export async function fetchCats() {
   try {
     const response = await fetch(
       `${BaseUrl}/images/search?limit=30&api_key=${process.env.CAT_API_KEY}`,
+      {
+        method: "GET",
+        next: { revalidate: 30 },
+      }
     );
 
     if (!response.ok) {

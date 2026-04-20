@@ -3,8 +3,6 @@ import { fetchCats } from "@/core/services/getCats";
 import Image from "next/image";
 import Link from "next/link";
 
-export const revalidate = 30;
-
 export default async function CatsPage() {
   const cats: ICat[] = await fetchCats();
 
