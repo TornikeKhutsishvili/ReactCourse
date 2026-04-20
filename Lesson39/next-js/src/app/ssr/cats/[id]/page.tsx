@@ -26,7 +26,6 @@ const fetchCat = async (id: string) => {
   if (!res.ok) {
     notFound();
   }
-
   return res.json();
 };
 
